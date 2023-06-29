@@ -1,0 +1,12 @@
+[
+  { "id": 1, "username": "sagar", "data": ["php", "react", "angular"] },
+  { "id": 2, "username": "john", "data": ["python", "django", "flask"] },
+  { "id": 3, "username": "jane", "data": ["java", "spring", "hibernate"] },
+  { "id": 4, "username": "bob", "data": ["javascript", "node.js", "express"] },
+  { "id": 5, "username": "alice", "data": ["ruby", "rails", "sinatra"] },
+  { "id": 6, "username": "david", "data": ["c", "c++", "qt"] },
+  { "id": 7, "username": "kate", "data": ["swift", "ios", "xcode"] },
+  { "id": 8, "username": "peter", "data": ["go", "gin", "beego"] },
+  { "id": 9, "username": "emma", "data": ["typescript", "react", "next.js"] },
+  { "id": 10, "username": "sam", "data": ["php", "laravel", "vue.js"] }
+]
