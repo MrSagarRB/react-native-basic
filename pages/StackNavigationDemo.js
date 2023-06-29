@@ -8,7 +8,16 @@ const StackNavigationDemo = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Login" component={Login} />
+        <Stack.Screen
+          name="Login"
+          component={Login}
+          options={{
+            title: "Login Page",
+            headerStyle: {
+              backgroundColor: "skyblue",
+            },
+          }}
+        />
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="Logout" component={Logout} />
       </Stack.Navigator>
