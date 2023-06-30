@@ -14,6 +14,7 @@ const TopTabNavigationDemo = () => {
         <Tab.Screen
           options={{
             tabBarLabel: "Dashboard",
+
             tabBarIcon: ({ color }) => (
               <MaterialCommunityIcons name="home" color={color} size={26} />
             ),

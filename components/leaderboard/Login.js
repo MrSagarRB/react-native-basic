@@ -28,7 +28,7 @@ export const Login = (props) => {
           value={user.password}
         ></TextInput>
         <TouchableOpacity
-          onPress={() => props.navigation.navigate("Home", user)}
+          onPress={() => props.navigation.navigate("Dashboard")}
           style={styles.btn}
         >
           <Text style={{ textAlign: "center", fontSize: 20 }}>Login</Text>
@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
     padding: 20,
     display: "flex",
     gap: 30,
-    marginTop: 100,
+    marginTop: 150,
   },
   textField: {
     borderWidth: 1,
