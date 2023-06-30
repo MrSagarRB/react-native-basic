@@ -13,6 +13,7 @@ import PlatformDemo from "./pages/PlatformDemo";
 import WebViewDemo from "./pages/WebViewDemo";
 import StackNavigationDemo from "./pages/StackNavigationDemo";
 import TabNavigationDemo from "./pages/TabNavigationDemo";
+import TopTabNavigationDemo from "./pages/TopTabNavigationDemo";
 
 const App = () => {
   return (
@@ -30,7 +31,8 @@ const App = () => {
       {/* <PlatformDemo /> */}
       {/* <WebViewDemo /> */}
       {/* <StackNavigationDemo /> */}
-      <TabNavigationDemo />
+      {/* <TabNavigationDemo /> */}
+      <TopTabNavigationDemo />
     </SafeAreaView>
   );
 };
