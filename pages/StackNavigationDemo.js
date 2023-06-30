@@ -1,7 +1,17 @@
 import React from "react";
-import { View, Text, Button } from "react-native";
+import {
+  View,
+  Text,
+  Button,
+  TouchableHighlight,
+  TouchableOpacity,
+  Pressable,
+} from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { Home } from "../components/Home";
+import { Login } from "../components/Login";
+import { Logout } from "../components/Logout";
 
 const StackNavigationDemo = () => {
   const Stack = createNativeStackNavigator();
@@ -18,46 +28,41 @@ const StackNavigationDemo = () => {
             },
           }}
         />
-        <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen
+          options={{
+            headerRight: () => (
+              <Pressable
+                style={{
+                  backgroundColor: "lightgreen",
+                  padding: 10,
+                  borderRadius: 5,
+                }}
+                onPress={() => console.warn("press")}
+                onLongPress={() => console.warn("Long press")}
+                onPressIn={() => console.warn("Long press In")}
+                onPressOut={() => console.warn("Long press Out")}
+              >
+                <Text>Pressable</Text>
+              </Pressable>
+            ),
+            headerTitle: () => (
+              <TouchableOpacity
+                style={{
+                  backgroundColor: "lightblue",
+                  padding: 10,
+                  borderRadius: 5,
+                }}
+              >
+                <Text>Press ME</Text>
+              </TouchableOpacity>
+            ),
+          }}
+          name="Home"
+          component={Home}
+        />
         <Stack.Screen name="Logout" component={Logout} />
       </Stack.Navigator>
     </NavigationContainer>
-  );
-};
-
-const Login = (props) => {
-  return (
-    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-      <Text style={{ fontSize: 30 }}>This is Login Screen</Text>
-      <Button
-        title="Go to Home"
-        onPress={() => props.navigation.navigate("Home")}
-      />
-    </View>
-  );
-};
-
-const Home = (props) => {
-  return (
-    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-      <Text style={{ fontSize: 30 }}>This is Home Screen</Text>
-      <Button
-        title="Go to Logout"
-        onPress={() => props.navigation.navigate("Logout")}
-      />
-    </View>
-  );
-};
-
-const Logout = (props) => {
-  return (
-    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-      <Text style={{ fontSize: 30 }}>Are You Sure Logout</Text>
-      <Button
-        title="Logout"
-        onPress={() => props.navigation.navigate("Login")}
-      />
-    </View>
   );
 };
 

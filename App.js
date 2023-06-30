@@ -12,6 +12,7 @@ import StatusBarDemo from "./pages/StatusBarDemo";
 import PlatformDemo from "./pages/PlatformDemo";
 import WebViewDemo from "./pages/WebViewDemo";
 import StackNavigationDemo from "./pages/StackNavigationDemo";
+import TabNavigationDemo from "./pages/TabNavigationDemo";
 
 const App = () => {
   return (
@@ -28,7 +29,8 @@ const App = () => {
       {/* <StatusBarDemo /> */}
       {/* <PlatformDemo /> */}
       {/* <WebViewDemo /> */}
-      <StackNavigationDemo />
+      {/* <StackNavigationDemo /> */}
+      <TabNavigationDemo />
     </SafeAreaView>
   );
 };
