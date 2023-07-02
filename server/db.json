@@ -1,0 +1,18 @@
+{
+  "posts": [
+    {
+      "author": "World",
+      "title": "Hello",
+      "id": 1
+    },
+    {
+      "author": "Sagar Borude",
+      "title": "Java script",
+      "id": 2
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

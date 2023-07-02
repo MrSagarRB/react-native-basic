@@ -15,6 +15,8 @@ import StackNavigationDemo from "./pages/StackNavigationDemo";
 import TabNavigationDemo from "./pages/TabNavigationDemo";
 import TopTabNavigationDemo from "./pages/TopTabNavigationDemo";
 import LeaderBoard from "./pages/LeaderBoard";
+import ApiCallDemo from "./pages/ApiCallDemo";
+import CarouselDemo from "./pages/CarouselDemo";
 
 const App = () => {
   return (
@@ -34,7 +36,9 @@ const App = () => {
       {/* <StackNavigationDemo /> */}
       {/* <TabNavigationDemo /> */}
       {/* <TopTabNavigationDemo /> */}
-      <LeaderBoard />
+      {/* <LeaderBoard /> */}
+      {/* <ApiCallDemo /> */}
+      <CarouselDemo />
     </SafeAreaView>
   );
 };
